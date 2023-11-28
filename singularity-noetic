@@ -5,7 +5,7 @@ From: ubuntu:20.04
 %post
   apt-get -y update
   apt-get -y upgrade
-  DEBIAN_FRONTEND=noninteractive apt-get -y -q --force-yes install lsb-release gnupg2 wget tar xz-utils libavcodec-dev libavformat-dev libswscale-dev python3-zmq python3-venv less nano psmisc tmux silversearcher-ag 
+  DEBIAN_FRONTEND=noninteractive apt-get -y -q --force-yes install lsb-release gnupg2 wget tar xz-utils libavcodec-dev libavformat-dev libswscale-dev python3-zmq python3-venv python3-pip python3-numpy python3-scipy  less nano psmisc tmux silversearcher-ag 
   sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
   apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
   apt-get -y update
